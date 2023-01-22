@@ -3,7 +3,7 @@ repeat
 until game:IsLoaded()
 
 if game.PlaceId ~= 6536647319 then
-    print("nigger, this anit the correct game, teleporting")
+    print("Nigger, This Anit The Correct Game, Teleporting")
     task.wait()
     local tpservice = game:GetService("TeleportService")
     local plr = game.Players.LocalPlayer
