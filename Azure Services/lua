@@ -10,6 +10,6 @@ if game.PlaceId ~= 6536647319 then
     tpservice:Teleport(6536647319, plr)
 end
 
-then
+else
 wait(1.5)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AzureServicess/Syn-God-Form/main/Slayers%20Unleashed/lua"))()
