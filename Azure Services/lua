@@ -7,10 +7,10 @@ if game.PlaceId ~= 6536647319 then
     local tpservice = game:GetService("TeleportService")
     local plr = game.Players.LocalPlayer
     tpservice:Teleport(6536647319, plr)
-    wait(5) -- wait 5 seconds after teleport to allow the game to load
 else
-    print("You are now in the correct game, launching script...")
-    print("hi")
+print("You are now in the correct game, launching script...")
+print("hi")
+do 
     repeat 
         wait(1)
         print("Waiting for 1 second...")
