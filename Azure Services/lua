@@ -3,9 +3,16 @@ repeat
 until game:IsLoaded()
 
 if game.PlaceId ~= 6536647319 then
-    print("Nigger, This Anit The Correct Game, Teleporting")
+    print("Bro, This Aint The Correct Game, Teleporting")
     task.wait()
     local tpservice = game:GetService("TeleportService")
     local plr = game.Players.LocalPlayer
     tpservice:Teleport(6536647319, plr)
+else
+    print("You are now in the correct game, launching script...")
+    -- launch your script here
+    repeat 
+        wait(1)
+        print("Waiting for 1 second...")
+    until false
 end
