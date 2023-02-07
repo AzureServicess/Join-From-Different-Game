@@ -1,10 +1,9 @@
-repeat task.wait() until game:IsLoaded()
-if game.PlaceId ~= 6536647319 or placeId == 6536671967 or placeId == 7233570720 or placeId == 9311658749 or placeId == 9506927631 or placeId == 9311659141 or placeId == 9258623573 or placeId == 9132466134 or placeId == 8958472043 or placeId == 8831669660 or placeId == 8161628518 or placeId == 8291588716 or placeId == 8196754415 or placeId == 8190014466 or placeId == 8189310064 or placeId == 7558849151 or placeId == 7465164491 or placeId == 8085917749 or placeId == 7146829768 or placeId == 7328311073 or placeId == 7434219366 or placeId == 7376463359 or placeId == 7278932260 or placeId == 7897643798 or placeId == 8007829202 or placeId == 7204380018 or placeId == 7205117224 or placeId == 7205044863 then
-print("Hey, This isn't the correct game, teleporting...")
-local tpservice = game:GetService("TeleportService")
-local plr = game.Players.LocalPlayer
-tpservice:Teleport(6536647319, plr)
-elseif game.PlaceId == 6536647319 then
+if game.PlaceId ~= 6536647319 and game.PlaceId ~= 6536671967 and game.PlaceId ~= 7233570720 and game.PlaceId ~= 9311658749 and game.PlaceId ~= 9506927631 and game.PlaceId ~= 9311659141 and game.PlaceId ~= 9258623573 and game.PlaceId ~= 9132466134 and game.PlaceId ~= 8958472043 and game.PlaceId ~= 8831669660 and game.PlaceId ~= 8161628518 and game.PlaceId ~= 8291588716 and game.PlaceId ~= 8196754415 and game.PlaceId ~= 8190014466 and game.PlaceId ~= 8189310064 and game.PlaceId ~= 7558849151 and game.PlaceId ~= 7465164491 and game.PlaceId ~= 8085917749 and game.PlaceId ~= 7146829768 and game.PlaceId ~= 7328311073 and game.PlaceId ~= 7434219366 and game.PlaceId ~= 7376463359 and game.PlaceId ~= 7278932260 and game.PlaceId ~= 7897643798 and game.PlaceId ~= 8007829202 and game.PlaceId ~= 7204380018 and game.PlaceId ~= 7205117224 and game.PlaceId ~= 7205044863 then
+  print("Hey, This isn't the correct game, teleporting...")
+  local tpservice = game:GetService("TeleportService")
+  local plr = game.Players.LocalPlayer
+  tpservice:Teleport(6536647319, plr)
+elseif game.PlaceId == 6536647319 or game.PlaceId == 6536671967 or game.PlaceId == 7233570720 or game.PlaceId == 9311658749 or game.PlaceId == 9506927631 or game.PlaceId == 9311659141 or game.PlaceId == 9258623573 or game.PlaceId == 9132466134 or game.PlaceId == 8958472043 or game.PlaceId == 8831669660 or game.PlaceId == 8161628518 or game.PlaceId == 8291588716 or game.PlaceId == 8196754415 or game.PlaceId == 8190014466 or game.PlaceId == 8189310064 or game.PlaceId == 7558849151 or game.PlaceId == 7465164491 or game.PlaceId == 8085917749 or game.PlaceId == 7146829768 or game.PlaceId == 7328311073 or game.PlaceId == 7434219366 or game.PlaceId == 7376463359 or game.PlaceId == 7278932260 or game.PlaceId == 7897643798 or game.PlaceId == 8007829202 or game.PlaceId == 7204380018 or game.PlaceId == 7205117224 or game.PlaceId == 7205044863 then
 print("Correct game detected, loading script...")
-loadstring(game:HttpGet("https://raw.githubusercontent.com/AzureServicess/Syn-God-Form/main/Slayers%20Unleashed/lua"))()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/AzureServicess/Syn-God-Form/main/Slayers%20Unleashed/lua"))()
 end
