@@ -1,17 +1,10 @@
-repeat wait(0.1) until game:IsLoaded()
-
+repeat task.wait() until game:IsLoaded()
 if game.PlaceId ~= 6536647319 then
-  print("Hey, this isn't the correct game, teleporting...")
-  local tpservice = game:GetService("TeleportService")
-  local plr = game.Players.LocalPlayer
-  tpservice:Teleport(6536647319, plr)
-else
-  print("Correct game detected, loading script...")
-  local success, errorMessage = pcall(function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/AzureServicess/Syn-God-Form/main/Slayers%20Unleashed/lua"))()
-  end)
-
-  if not success then
-    print("Failed to load script: " .. tostring(errorMessage))
-  end
+print("Hey, This isn't the correct game, teleporting...")
+local tpservice = game:GetService("TeleportService")
+local plr = game.Players.LocalPlayer
+tpservice:Teleport(6536647319, plr)
+elseif game.PlaceId == 6536647319 then
+print("Correct game detected, loading script...")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AzureServicess/Syn-God-Form/main/Slayers%20Unleashed/lua"))()
 end
