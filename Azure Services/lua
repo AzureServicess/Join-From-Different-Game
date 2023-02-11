@@ -1,38 +1,40 @@
-repeat task.wait() until game:IsLoaded()
-correctGames = {
-    6536647319,
-    6536671967,
-    7233570720,
-    9311658749,
-    9506927631,
-    9311659141,
-    9258623573,
-    9132466134,
-    8958472043,
-    8831669660,
-    8161628518,
-    8291588716,
-    8196754415,
-    8190014466,
-    8189310064,
-    7558849151,
-    7465164491,
-    8085917749,
-    7146829768,
-    7328311073,
-    7434219366,
-    7376463359,
-    7278932260,
-    7897643798,
-    8007829202,
-    7204380018,
-    7205117224,
-    7205044863,
+local correctGames = {
+6536647319,
+6536671967,
+7233570720,
+9311658749,
+9506927631,
+9311659141,
+9258623573,
+9132466134,
+8958472043,
+8831669660,
+8161628518,
+8291588716,
+8196754415,
+8190014466,
+8189310064,
+7558849151,
+7465164491,
+8085917749,
+7146829768,
+7328311073,
+7434219366,
+7376463359,
+7278932260,
+7897643798,
+8007829202,
+7204380018,
+7205117224,
+7205044863,
 }
-if table.find(correctGames,game.PlaceId) then
+if table.find(correctGames, game.PlaceId) then
 print("Correct game detected, loading script...")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AzureServicess/Syn-God-Form/main/Slayers%20Unleashed/lua"))()
-elseif not table.find(correctGames,game.PlaceId) then
+elseif not table.find(correctGames, game.PlaceId) then
 print("Hey, This isn't the correct game, teleporting...")
 game:GetService("TeleportService"):Teleport(6536647319, game.Players.LocalPlayer)
+repeat task.wait() until game:IsLoaded()
+print("Teleported to the correct game, loading script...")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AzureServicess/Syn-God-Form/main/Slayers%20Unleashed/lua"))()
 end
